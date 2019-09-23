@@ -1,0 +1,8 @@
+node-jenkins-app-example:
+  restart: always
+  image: node-jenkins-docker-example
+  build: ./node-jenkins-docker-example
+  container_name: node-jenkins-app-example
+  environment:
+    - VIRTUAL_HOST=xyz.localhost
+    - VIRTUAL_PORT=3000
