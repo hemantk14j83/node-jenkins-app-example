@@ -1,6 +1,6 @@
 node-jenkins-app-example:
   restart: always
-  image: node-jenkins-docker-example
+  #image: node-jenkins-docker-example
   build: ./node-jenkins-docker-example
   container_name: node-jenkins-app-example
   environment:
